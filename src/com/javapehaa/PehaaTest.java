@@ -110,5 +110,69 @@ public class PehaaTest {
 		assertEquals(false, Pehaa.checkIfTriangleRectangle(5, 3, 3));
 		
 	}
+	
+	@Test
+	public void checkSiTuPeuxAcheter() {
+		assertEquals(false, Pehaa.checkSiTuPeuxAcheter(3));
+		assertEquals(false, Pehaa.checkSiTuPeuxAcheter(24));
+		assertEquals(true, Pehaa.checkSiTuPeuxAcheter(20));
+		assertEquals(false, Pehaa.checkSiTuPeuxAcheter(23));
+		
+	}
+	
+	@Test
+	public void checkCase1() {
+		assertEquals(true, Pehaa.checkCase1(30.0, 44));
+		assertEquals(true, Pehaa.checkCase1(120.0, 30));
+		assertEquals(true, Pehaa.checkCase1(200, 55));
+		assertEquals(false, Pehaa.checkCase1(200, 10));
+		
+	}
+	
+	@Test
+	public void checkCase2() {
+		assertEquals(true, Pehaa.checkCase2(13,14));
+		assertEquals(true, Pehaa.checkCase2(14,13));
+		assertEquals(true, Pehaa.checkCase2(21, 14));
+		assertEquals(true, Pehaa.checkCase2(13, 8));		
+	}
+	
+	@Test
+	public void checkCase2a() {
+		assertEquals(true, Pehaa.checkCase2a(13,14));
+		assertEquals(true, Pehaa.checkCase2a(14,13));
+		assertEquals(false, Pehaa.checkCase2a(21, 14));
+		assertEquals(false, Pehaa.checkCase2a(13, 8));		
+	}
+	
+
+	@Test
+	public void checkCase3() {
+		assertEquals(true, Pehaa.checkCase3(13,14,17));
+		assertEquals(true, Pehaa.checkCase3(14,13, 10));
+		assertEquals(false, Pehaa.checkCase3(21, 14, 15));
+		assertEquals(false, Pehaa.checkCase3(5, 13, 8));		
+	}
+	
+	
+//	public static boolean checkSiTuPeuxAcheter(int prix) {
+//		// t'as 22 euros en monnaies de 2 euros, la machine ne rend pas de monnaie, check si tu peux payer
+//		return false;
+//	}
+//	
+//	public static boolean checkCase1(double prix, float remise) {
+//		// t'as 100 euros, verifie si tu peux acheter l'article solde
+//		return false;
+//	}
+//	
+//	public static boolean checkCase2(int number1, int number2) {
+//		// check si une (mais pas tous les 2) de 2 chiffres, ou leur somme se divise par 7
+//		return false;
+//	}
+//	
+//	public static boolean checkCase3(int number1, int number2, int number3) {
+//		// check si les trois chiffres sont dans l'ordre, soit croissant ou decroissant
+//		return false;
+//	}
 
 }
