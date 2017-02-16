@@ -1,6 +1,7 @@
 package com.javapehaa;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Pehaa {
 	
@@ -68,7 +69,6 @@ public class Pehaa {
 	}
 	
 	public static int[] allElementsExceptFirstAndLastInt(int array[]) {
-		
 		return null;
 	}
 	

@@ -58,9 +58,9 @@ public class PehaaTest {
 	
 	@Test
 	public void checkIfAllElementsPair() {
-		int arrayIn[] = {  2, 10,  4,  6,  8 };
+		int[] arrayIn = {  2, 10,  4,  6,  8 };
 		assertEquals(true, Pehaa.checkIfAllElementsPair(arrayIn) );
-		int arrayIn1[] = {  2, 10, 4,  6,  8, 7 };
+		int[] arrayIn1 = {  2, 10, 4,  6,  8, 7 };
 		assertEquals(false, Pehaa.checkIfAllElementsPair(arrayIn1) );
 	}
 	
@@ -200,7 +200,7 @@ public class PehaaTest {
 	
 	@Test
 	public void allElementsExceptFirstAndLast() {
-		int arrayIn[] = {  2, 3, 2, 0,  4, 11, 6,  8 };
+		int[] arrayIn = {  2, 3, 2, 0,  4, 11, 6,  8 };
 		ArrayList<Integer> resultat = new ArrayList<Integer>();
 		resultat.add(3);
 		resultat.add(2);
@@ -209,44 +209,43 @@ public class PehaaTest {
 		resultat.add(11);
 		resultat.add(6);
 		assertEquals(resultat, Pehaa.allElementsExceptFirstAndLast(arrayIn) );
-		int arrayIn1[] = {  9, 3, 11 };
+		int[] arrayIn1 = {  9, 3, 11 };
 		ArrayList<Integer> resultat1 = new ArrayList<Integer>();
 		resultat1.add(3);
 		assertEquals(resultat1, Pehaa.allElementsExceptFirstAndLast(arrayIn1) );
-		int arrayIn2[] = {  2, 3 };
+		int[] arrayIn2 = {  2, 3 };
 		ArrayList<Integer> resultat2 = new ArrayList<Integer>();
 		assertEquals(resultat2, Pehaa.allElementsExceptFirstAndLast(arrayIn2) );
 	}
 	
 	@Test
 	public void allElementsExceptFirstAndLastInt() {
-		int arrayIn[] = {  2, 3, 2, 0,  4, 11, 6,  8 };
-		int arrayOut[] = {  3, 2, 0,  4, 11, 6 };
-		
-		assertEquals(arrayOut, Pehaa.allElementsExceptFirstAndLastInt(arrayIn) );
-		int arrayIn1[] = {  9, 3, 11 };
-		int arrayOut1[] = {  3 };
-		assertEquals(arrayOut1, Pehaa.allElementsExceptFirstAndLastInt(arrayIn1) );
-		int arrayIn2[] = {  2, 3 };
-		int arrayOut2[] = {};
-		assertEquals(arrayOut2, Pehaa.allElementsExceptFirstAndLastInt(arrayIn2) );
+		int[] arrayIn = {2, 3, 2, 0, 4, 11, 6,  8 };
+		int[] arrayOut = {  3, 2, 0, 4, 11, 6 };	
+		assertArrayEquals(arrayOut, Pehaa.allElementsExceptFirstAndLastInt(arrayIn) );
+		int[] arrayIn1 = {9, 3, 11 };
+		int[] arrayOut1 = { 3 };
+		assertArrayEquals(arrayOut1, Pehaa.allElementsExceptFirstAndLastInt(arrayIn1) );
+		int[] arrayIn2 = { 2, 3 };
+		int[] arrayOut2 = {};
+		assertArrayEquals(arrayOut2, Pehaa.allElementsExceptFirstAndLastInt(arrayIn2) );
 	}
 	
 	@Test
 	public void allElementsWithIndexPair() {
-		int arrayIn[] = {  2, 3, 2, 0,  4, 11, 6,  8 };
+		int[] arrayIn = {  2, 3, 2, 0,  4, 11, 6,  8 };
 		ArrayList<Integer> resultat = new ArrayList<Integer>();
 		resultat.add(2);
 		resultat.add(2);
 		resultat.add(4);
 		resultat.add(6);
 		assertEquals(resultat, Pehaa.allElementsWithIndexPair(arrayIn) );
-		int arrayIn1[] = {  9, 3, 11 };
+		int[] arrayIn1 = {  9, 3, 11 };
 		ArrayList<Integer> resultat1 = new ArrayList<Integer>();
 		resultat1.add(9);
 		resultat1.add(11);
 		assertEquals(resultat1, Pehaa.allElementsWithIndexPair(arrayIn1) );
-		int arrayIn2[] = {  2, 3 };
+		int[] arrayIn2 = {  2, 3 };
 		ArrayList<Integer> resultat2 = new ArrayList<Integer>();
 		resultat2.add(2);
 		assertEquals(resultat2, Pehaa.allElementsWithIndexPair(arrayIn2) );
@@ -254,7 +253,7 @@ public class PehaaTest {
 	
 	@Test
 	public void reverseOrder() {
-		int arrayIn[] = {  2, 3, 2, 0,  4, 11, 6,  8 };
+		int[] arrayIn = {  2, 3, 2, 0,  4, 11, 6,  8 };
 		ArrayList<Integer> resultat = new ArrayList<Integer>();
 		resultat.add(8);
 		resultat.add(6);
@@ -265,14 +264,14 @@ public class PehaaTest {
 		resultat.add(3);
 		resultat.add(2);
 		assertEquals(resultat, Pehaa.reverseOrder(arrayIn) );
-		int arrayIn1[] = {  9, 3, 11 };
+		int[] arrayIn1 = {  9, 3, 11 };
 		ArrayList<Integer> resultat1 = new ArrayList<Integer>();
 		
 		resultat1.add(11);
 		resultat1.add(9);
 		resultat1.add(3);
 		assertEquals(resultat1, Pehaa.reverseOrder(arrayIn1) );
-		int arrayIn2[] = {  2, 3 };
+		int[] arrayIn2 = {  2, 3 };
 		ArrayList<Integer> resultat2 = new ArrayList<Integer>();
 		resultat2.add(3);
 		resultat2.add(2);
@@ -281,16 +280,16 @@ public class PehaaTest {
 	
 	@Test
 	public void reverseOrderInt() {
-		int arrayIn[] = {  2, 3, 2, 0,  4, 11, 6,  8 };
-		int arrayOut[] = {  8,6,11,4,0,2,3,2 };
+		int[] arrayIn = {  2, 3, 2, 0,  4, 11, 6,  8 };
+		int[] arrayOut = {  8,6,11,4,0,2,3,2 };
 		
-		assertEquals(arrayOut, Pehaa.reverseOrderInt(arrayIn) );
-		int arrayIn1[] = {  9, 3, 11 };
-		int arrayOut1[] = {  11,3,9 };
-		assertEquals(arrayOut1, Pehaa.reverseOrderInt(arrayIn1) );
-		int arrayIn2[] = {  2, 3 };
-		int arrayOut2[] = {3,2};
-		assertEquals(arrayOut2, Pehaa.reverseOrderInt(arrayIn2) );
+		assertArrayEquals(arrayOut, Pehaa.reverseOrderInt(arrayIn) );
+		int[] arrayIn1 = {  9, 3, 11 };
+		int[] arrayOut1 = {  11,3,9 };
+		assertArrayEquals(arrayOut1, Pehaa.reverseOrderInt(arrayIn1) );
+		int[] arrayIn2 = {  2, 3 };
+		int[] arrayOut2 = {3,2};
+		assertArrayEquals(arrayOut2, Pehaa.reverseOrderInt(arrayIn2) );
 	}
 
 }
