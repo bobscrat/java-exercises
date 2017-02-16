@@ -61,5 +61,19 @@ public class Pehaa {
 		
 		return null;
 	}
+	
+	public static ArrayList<Integer> allElementsExceptFirstAndLast(int array[]) {
+
+		return null;
+	}
+	
+	public static int[] allElementsExceptFirstAndLastInt(int array[]) {
+		
+		return null;
+	}
+	
+	public static ArrayList<Integer> allElementsWithIndexPair(int array[]) {
+		return null;
+	}
 		
 }

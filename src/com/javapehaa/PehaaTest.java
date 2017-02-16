@@ -197,5 +197,59 @@ public class PehaaTest {
 		resultat2.add(6);
 		assertEquals(resultat2, Pehaa.allElementsExceptFirstThree(arrayIn2) );
 	}
+	
+	@Test
+	public void allElementsExceptFirstAndLast() {
+		int arrayIn[] = {  2, 3, 2, 0,  4, 11, 6,  8 };
+		ArrayList<Integer> resultat = new ArrayList<Integer>();
+		resultat.add(3);
+		resultat.add(2);
+		resultat.add(0);
+		resultat.add(4);
+		resultat.add(11);
+		resultat.add(6);
+		assertEquals(resultat, Pehaa.allElementsExceptFirstAndLast(arrayIn) );
+		int arrayIn1[] = {  9, 3, 11 };
+		ArrayList<Integer> resultat1 = new ArrayList<Integer>();
+		resultat1.add(3);
+		assertEquals(resultat1, Pehaa.allElementsExceptFirstAndLast(arrayIn1) );
+		int arrayIn2[] = {  2, 3 };
+		ArrayList<Integer> resultat2 = new ArrayList<Integer>();
+		assertEquals(resultat2, Pehaa.allElementsExceptFirstAndLast(arrayIn2) );
+	}
+	
+	@Test
+	public void allElementsExceptFirstAndLastINt() {
+		int arrayIn[] = {  2, 3, 2, 0,  4, 11, 6,  8 };
+		int arrayOut[] = {  3, 2, 0,  4, 11, 6 };
+		
+		assertEquals(arrayOut, Pehaa.allElementsExceptFirstAndLast(arrayIn) );
+		int arrayIn1[] = {  9, 3, 11 };
+		int arrayOut1[] = {  3 };
+		assertEquals(arrayOut1, Pehaa.allElementsExceptFirstAndLast(arrayIn1) );
+		int arrayIn2[] = {  2, 3 };
+		int arrayOut2[] = {};
+		assertEquals(arrayOut2, Pehaa.allElementsExceptFirstAndLast(arrayIn2) );
+	}
+	
+	@Test
+	public void allElementsWithIndexPair() {
+		int arrayIn[] = {  2, 3, 2, 0,  4, 11, 6,  8 };
+		ArrayList<Integer> resultat = new ArrayList<Integer>();
+		resultat.add(2);
+		resultat.add(2);
+		resultat.add(4);
+		resultat.add(6);
+		assertEquals(resultat, Pehaa.allElementsWithIndexPair(arrayIn) );
+		int arrayIn1[] = {  9, 3, 11 };
+		ArrayList<Integer> resultat1 = new ArrayList<Integer>();
+		resultat1.add(9);
+		resultat1.add(11);
+		assertEquals(resultat1, Pehaa.allElementsWithIndexPair(arrayIn1) );
+		int arrayIn2[] = {  2, 3 };
+		ArrayList<Integer> resultat2 = new ArrayList<Integer>();
+		resultat2.add(2);
+		assertEquals(resultat2, Pehaa.allElementsWithIndexPair(arrayIn2) );
+	}
 
 }
