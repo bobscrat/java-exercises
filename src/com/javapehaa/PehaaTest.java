@@ -321,5 +321,63 @@ public class PehaaTest {
 		resultat2.add(3);
 		assertEquals(resultat2, Pehaa.insertElementInTheMiddleOfAnArray(arrayIn2, element) );
 	}
+	
+	
+	@Test
+	public void exportElementsPair() {
+		
+		ArrayList<Integer> in = new ArrayList<Integer>();
+		in.add(2);
+		in.add(3);
+		in.add(2);
+		in.add(0);
+		in.add(-7);
+		in.add(4);
+		in.add(11);
+		in.add(6);
+		in.add(8);
+		ArrayList<Integer> out = new ArrayList<Integer>();
+		out.add(2);
+		out.add(2);
+		out.add(0);
+		out.add(4);
+		out.add(6);
+		out.add(8);
+		assertEquals(out, Pehaa.exportElementsPair(in) );
+		ArrayList<Integer> in2 = new ArrayList<Integer>();
+		in2.add(2);
+		in2.add(3);
+		ArrayList<Integer> out2 = new ArrayList<Integer>();
+		out2.add(2);
+		assertEquals(out2, Pehaa.exportElementsPair(in2) );
+	}
+	
+	@Test
+	public void exportElementsWithIndexPair() {
+		
+		ArrayList<Integer> in = new ArrayList<Integer>();
+		in.add(2);
+		in.add(3);
+		in.add(2);
+		in.add(0);
+		in.add(-7);
+		in.add(4);
+		in.add(11);
+		in.add(6);
+		in.add(8);
+		ArrayList<Integer> out = new ArrayList<Integer>();
+		out.add(2);
+		out.add(2);
+		out.add(-7);
+		out.add(11);
+		out.add(8);
+		assertEquals(out, Pehaa.exportElementsWithIndexPair(in) );
+		ArrayList<Integer> in2 = new ArrayList<Integer>();
+		in2.add(2);
+		in2.add(3);
+		ArrayList<Integer> out2 = new ArrayList<Integer>();
+		out2.add(2);
+		assertEquals(out2, Pehaa.exportElementsWithIndexPair(in2) );
+	}
 
 }

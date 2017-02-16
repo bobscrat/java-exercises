@@ -89,6 +89,15 @@ public class Pehaa {
 		return null;
 	}
 	
+	public static ArrayList<Integer> exportElementsPair( ArrayList<Integer> list ) {
+		
+		return null;
+	}
+	
+	public static ArrayList<Integer> exportElementsWithIndexPair( ArrayList<Integer> list ) {
+		return null;
+	}
+	
 	
 		
 }
