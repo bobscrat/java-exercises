@@ -174,5 +174,28 @@ public class PehaaTest {
 //		// check si les trois chiffres sont dans l'ordre, soit croissant ou decroissant
 //		return false;
 //	}
+	
+	@Test
+	public void allElementsExceptFirstThree() {
+		int arrayIn[] = {  2, 3, 2, 0,  4, 11, 6,  8 };
+		ArrayList<Integer> resultat = new ArrayList<Integer>();
+		resultat.add(0);
+		resultat.add(4);
+		resultat.add(11);
+		resultat.add(6);
+		resultat.add(8);
+		assertEquals(resultat, Pehaa.allElementsExceptFirstThree(arrayIn) );
+		int arrayIn1[] = {  9, 3, 11 };
+		ArrayList<Integer> resultat1 = new ArrayList<Integer>();
+		assertEquals(resultat1, Pehaa.allElementsExceptFirstThree(arrayIn1) );
+		int arrayIn2[] = {  2, 3, 2, 0,  4, 4, 6,  6 };
+		ArrayList<Integer> resultat2 = new ArrayList<Integer>();
+		resultat2.add(0);
+		resultat2.add(4);
+		resultat2.add(4);
+		resultat2.add(6);
+		resultat2.add(6);
+		assertEquals(resultat2, Pehaa.allElementsExceptFirstThree(arrayIn2) );
+	}
 
 }

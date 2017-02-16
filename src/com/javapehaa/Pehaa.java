@@ -56,5 +56,10 @@ public class Pehaa {
 		// check si les trois chiffres sont dans l'ordre, soit croissant ou decroissant
 		return false;
 	}
+	
+	public static ArrayList<Integer> allElementsExceptFirstThree(int array[]) {
+		
+		return null;
+	}
 		
 }
