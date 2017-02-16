@@ -268,8 +268,8 @@ public class PehaaTest {
 		ArrayList<Integer> resultat1 = new ArrayList<Integer>();
 		
 		resultat1.add(11);
-		resultat1.add(9);
 		resultat1.add(3);
+		resultat1.add(9);
 		assertEquals(resultat1, Pehaa.reverseOrder(arrayIn1) );
 		int[] arrayIn2 = {  2, 3 };
 		ArrayList<Integer> resultat2 = new ArrayList<Integer>();
