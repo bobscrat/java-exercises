@@ -2,6 +2,7 @@ package com.javapehaa;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class Pehaa {
 	
@@ -98,6 +99,8 @@ public class Pehaa {
 		return null;
 	}
 	
-	
+	public static int Addition( HashMap<String, Integer> addition ) {
+		return 0;
+	}
 		
 }

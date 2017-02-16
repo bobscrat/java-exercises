@@ -3,6 +3,7 @@ package com.javapehaa;
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import org.junit.After;
 import org.junit.Before;
@@ -378,6 +379,16 @@ public class PehaaTest {
 		ArrayList<Integer> out2 = new ArrayList<Integer>();
 		out2.add(2);
 		assertEquals(out2, Pehaa.exportElementsWithIndexPair(in2) );
+	}
+	
+	@Test
+	public void Addition() {
+		
+		HashMap<String,Integer> in = new HashMap<String,Integer>();
+		in.put("chicken", 22);
+		in.put("curry", 18);
+		in.put("coffee", 2);
+		assertEquals(42, Pehaa.Addition(in) );
 	}
 
 }
