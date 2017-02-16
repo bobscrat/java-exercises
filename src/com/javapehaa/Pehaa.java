@@ -72,7 +72,16 @@ public class Pehaa {
 		return null;
 	}
 	
+	
 	public static ArrayList<Integer> allElementsWithIndexPair(int array[]) {
+		return null;
+	}
+	
+	public static ArrayList<Integer> reverseOrder(int array[]) {
+		return null;
+	}
+	
+	public static int[] reverseOrderInt(int array[]) {
 		return null;
 	}
 		
