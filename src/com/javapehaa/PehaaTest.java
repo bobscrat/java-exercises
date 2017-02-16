@@ -291,5 +291,35 @@ public class PehaaTest {
 		int[] arrayOut2 = {3,2};
 		assertArrayEquals(arrayOut2, Pehaa.reverseOrderInt(arrayIn2) );
 	}
+	
+	@Test
+	public void insertElementInTheMiddleOfAnArray() {
+		int element = -7;
+		int[] arrayIn = {  2, 3, 2, 0, 4, 11, 6,  8 };
+		ArrayList<Integer> resultat = new ArrayList<Integer>();
+		resultat.add(2);
+		resultat.add(3);
+		resultat.add(2);
+		resultat.add(0);
+		resultat.add(element);
+		resultat.add(4);
+		resultat.add(11);
+		resultat.add(6);
+		resultat.add(8);
+		assertEquals(resultat, Pehaa.insertElementInTheMiddleOfAnArray(arrayIn, element) );
+		int[] arrayIn1 = {  9, 3, 11 };
+		ArrayList<Integer> resultat1 = new ArrayList<Integer>();		
+		resultat1.add(9);
+		resultat1.add(element);
+		resultat1.add(3);
+		resultat1.add(11);
+		assertEquals(resultat1, Pehaa.insertElementInTheMiddleOfAnArray(arrayIn1, element) );
+		int[] arrayIn2 = {  2, 3 };
+		ArrayList<Integer> resultat2 = new ArrayList<Integer>();
+		resultat2.add(2);
+		resultat2.add(element);
+		resultat2.add(3);
+		assertEquals(resultat2, Pehaa.insertElementInTheMiddleOfAnArray(arrayIn2, element) );
+	}
 
 }

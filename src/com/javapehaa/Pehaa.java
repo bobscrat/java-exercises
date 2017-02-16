@@ -84,5 +84,11 @@ public class Pehaa {
 	public static int[] reverseOrderInt(int array[]) {
 		return null;
 	}
+	
+	public static ArrayList<Integer> insertElementInTheMiddleOfAnArray(int array[], int element ) {
+		return null;
+	}
+	
+	
 		
 }
