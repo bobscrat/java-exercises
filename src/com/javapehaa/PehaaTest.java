@@ -390,5 +390,41 @@ public class PehaaTest {
 		in.put("coffee", 2);
 		assertEquals(42, Pehaa.Addition(in) );
 	}
+	
+	@Test
+	public void checkIfStringStartsWithA() {
+		
+		assertEquals(false, Pehaa.checkIfStringStartsWithA( "kuku" ) );
+		assertEquals(true, Pehaa.checkIfStringStartsWithA( "assert" ) );
+		assertEquals(true, Pehaa.checkIfStringStartsWithA( "Amour" ) );
+	}
+	
+	@Test
+	public void checkIfStringStartsWithVowel() {
+		String vowels = "aeiouy";
+		assertEquals(false, Pehaa.checkIfStringStartsWithVowel( "kuku" ) );
+		assertEquals(true, Pehaa.checkIfStringStartsWithVowel( "assert" ) );
+		assertEquals(true, Pehaa.checkIfStringStartsWithVowel( "Amour" ) );
+		assertEquals(true, Pehaa.checkIfStringStartsWithVowel( "ola" ) );
+		assertEquals(true, Pehaa.checkIfStringStartsWithVowel( "Ola" ) );
+		assertEquals(true, Pehaa.checkIfStringStartsWithVowel( "eoee" ) );
+		assertEquals(true, Pehaa.checkIfStringStartsWithVowel( "Ecran" ) );
+		assertEquals(true, Pehaa.checkIfStringStartsWithVowel( "ioee" ) );
+		assertEquals(true, Pehaa.checkIfStringStartsWithVowel( "Icran" ) );
+		assertEquals(true, Pehaa.checkIfStringStartsWithVowel( "ioee" ) );
+		assertEquals(true, Pehaa.checkIfStringStartsWithVowel( "Icran" ) );
+		assertEquals(true, Pehaa.checkIfStringStartsWithVowel( "utile" ) );
+		assertEquals(true, Pehaa.checkIfStringStartsWithVowel( "Utile" ) );
+		assertEquals(true, Pehaa.checkIfStringStartsWithVowel( "ygrek" ) );
+		assertEquals(true, Pehaa.checkIfStringStartsWithVowel( "YGY" ) );
+	}
+	
+	@Test
+	public void checkIfStringEndsWithS() {
+		
+		assertEquals(false, Pehaa.checkIfStringEndsWithS( "kuku" ) );
+		assertEquals(true, Pehaa.checkIfStringEndsWithS( "asserts" ) );
+		assertEquals(true, Pehaa.checkIfStringEndsWithS( "AmourS" ) );
+	}
 
 }

@@ -102,5 +102,17 @@ public class Pehaa {
 	public static int Addition( HashMap<String, Integer> addition ) {
 		return 0;
 	}
+	
+	public static boolean checkIfStringStartsWithA( String word ) {
+		return false;
+	}
+	
+	public static boolean checkIfStringStartsWithVowel( String word ) {
+		return false;
+	}
+	
+	public static boolean checkIfStringEndsWithS( String word ) {
+		return false;
+	}
 		
 }
