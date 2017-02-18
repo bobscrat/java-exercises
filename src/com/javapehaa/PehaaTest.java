@@ -401,7 +401,7 @@ public class PehaaTest {
 	
 	@Test
 	public void checkIfStringStartsWithVowel() {
-		String vowels = "aeiouy";
+
 		assertEquals(false, Pehaa.checkIfStringStartsWithVowel( "kuku" ) );
 		assertEquals(true, Pehaa.checkIfStringStartsWithVowel( "assert" ) );
 		assertEquals(true, Pehaa.checkIfStringStartsWithVowel( "Amour" ) );
