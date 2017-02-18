@@ -426,5 +426,31 @@ public class PehaaTest {
 		assertEquals(true, Pehaa.checkIfStringEndsWithS( "asserts" ) );
 		assertEquals(true, Pehaa.checkIfStringEndsWithS( "AmourS" ) );
 	}
+	
+	@Test
+	public void findShortestWord() {
+		String[] arrayIn = {  "grrr", "kuku", "la", "ouf",  "mu" };
+		assertEquals("la", Pehaa.findShortestWord(arrayIn) );
+	}
+	
+	@Test
+	public void swapFirstandLastLetter() {
+		
+		assertEquals("uukk",Pehaa.swapFirstandLastLetter( "kuku" ) );
+		assertEquals("uu",Pehaa.swapFirstandLastLetter( "uu" ) );
+		assertEquals("sa",Pehaa.swapFirstandLastLetter( "as" ) );
+		assertEquals("eoj",Pehaa.swapFirstandLastLetter( "joe" ) );
+	}
+	
+	@Test
+	public void swapFirstandLastElement() {
+		int[] arrayIn = {  2, 3, 2, 0,  4, 11, 6,  8 };
+		int[] arrayOut = {  8, 3, 2, 0,  4, 11, 6,  2 };
+		assertArrayEquals( arrayOut, Pehaa.swapFirstandLastElement(arrayIn));
+		int[] arrayIn1 = {  2, 3, 2, 0,  4, 11, 6,  2 };
+		assertArrayEquals( arrayIn1, Pehaa.swapFirstandLastElement(arrayIn1));
+		int[] arrayIn2 = {  2 };
+		assertArrayEquals( arrayIn2, Pehaa.swapFirstandLastElement(arrayIn2));
+	}
 
 }

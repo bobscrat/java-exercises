@@ -114,5 +114,20 @@ public class Pehaa {
 	public static boolean checkIfStringEndsWithS( String word ) {
 		return false;
 	}
+	
+	public static String findShortestWord(String[] array ) {
+		
+		return null;
+	}
+	
+	public static String swapFirstandLastLetter(String array ) {
+		
+		return null;
+	}
+	
+	public static int[] swapFirstandLastElement(int[] array ) {
+		
+		return null;
+	}
 		
 }
